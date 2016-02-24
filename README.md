@@ -16,6 +16,10 @@ Sample usage:
     0 photos
     1 videos
 
+# Preconditions
+
+Needs OS X and `jhead`.
+
 # Prepare
 
 Make it executable:
