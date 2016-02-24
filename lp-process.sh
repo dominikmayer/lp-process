@@ -47,6 +47,12 @@ echo
 
 for FILE in IMG_*.JPG; do
   if [[ $FILE != "IMG_*.JPG" ]]; then
+    CAMERA=`mdls -name kMDItemAcquisitionModel -raw "$FILE"`
+    if [[ $CAMERA = "(null)" ]]; then
+      echo "$FILE: unkown camera"
+    else
+      echo "$FILE: $CAMERA"
+    fi
     #echo $(jhead -exonly -n"$FORMAT" "$FILE")
     PHOTOS=$((PHOTOS+1))
   fi
