@@ -1,4 +1,5 @@
-
 *.JPG
-*.PNG
 *.MOV
+*.PNG
+.DS_STORE
+*.AAE
